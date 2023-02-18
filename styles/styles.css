@@ -14,12 +14,19 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  padding: 0;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
   background-color: #f2f2f2;
+  height: 100%;
 }
 
 .visually-hidden {
@@ -35,13 +42,57 @@ body {
   overflow: hidden;
 }
 
-.page {
+.page-container {
   background-color: #ffffff;
   text-align: center;
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
+
+.main-page {
+  flex-grow: 1;
+}
+
+
+/*  Шапка */
+
 
 .main-header {
   color: #000000;
+  position: relative;
+  padding-left: 238px;
+}
+
+.logo-link {
+  position: absolute;
+  left: 70px;
+  top: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  width: 450px;
+  flex-wrap: wrap;
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  max-width: 312px;
 }
 
 .navigation-link {
@@ -51,6 +102,8 @@ body {
   color: inherit;
   text-decoration: none;
   text-align: center;
+  padding: 20px 16px;
+  display: block;
 }
 
 .button-navigation-link {
@@ -62,28 +115,59 @@ body {
   text-transform: uppercase;
 }
 
+
+/*  Hero */
+
+
 .welcome {
+  background-color: #b29584;
   background-image:
-    url("../images/background/Vector.svg"),
-    url("../images/background/hero.jpg");
+    url("../images/background/hero.svg"),
+    url("../images/background/hero-back.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  background-color: #756257;
+  background-size: 100% 57px, cover;
+  background-position: bottom left, 0 0;
+  min-height: 485px;
+  box-sizing: border-box;
 }
 
-.advantages {
-  text-align: center;
+.logo-welcome {
+  display: block;
+  margin: 0 auto;
+  padding: 51px 0 82px;
 }
 
-.about-city,
-.service-about,
-.search-title {
+
+/* Преимущества */
+
+
+.advantages-container {
+  max-width: 885px;
+  margin: 0 auto;
+  padding: 69px 0 100px;
+}
+
+.city-advantages {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-bottom: 15px
+}
+
+.about-advantages {
+  margin: 0;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .advantages-title {
@@ -92,18 +176,47 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-bottom: 61px;
 }
 
 .advantages-description {
+  width: 230px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
-.block-blue,
+.advantages-item {
+  width: 400px;
+  box-sizing: border-box;
+  min-height: 385px;
+  text-align: center;
+  padding: 114px 85px 0;
+}
+
+.block-blue {
+  display: flex;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.block-blue-container {
+  background: #82b3d3;
+  width: 400px;
+  box-sizing: border-box;
+  min-height: 385px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 103px;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
 .title-white {
   color: #ffffff;
-  background: #82b3d3;
 }
 
 .light-blue {
@@ -114,13 +227,58 @@ body {
   background: rgba(131, 179, 211, 0.2);
 }
 
+
+/* Сервис */
+
+
+.service-container {
+  margin: 0 auto;
+  padding: 64px 0 64px;
+  max-width: 519px;
+}
+
+.service-about {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.servive-text {
+  margin: 0;
+}
+
+.service-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.service-item {
+  width: 400px;
+  box-sizing: border-box;
+  min-height: 385px;
+  text-align: center;
+  padding: 82px 85px;
+}
+
 .service-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  padding-top: 102px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-bottom: 29px;
 }
+
 
 .service-description {
   font-weight: 400;
@@ -128,6 +286,33 @@ body {
   line-height: 21px;
   text-align: center;
   color: #333333;
+  margin: 0;
+}
+
+.search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.search-description {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.search-hotel {
+  width: 592px;
+  margin: 0 auto;
+  padding: 96px 0 116px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
 }
 
 .subscribe-form-e-mail,
@@ -152,26 +337,56 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  display: block;
+}
+
+
+/* Футер */
+
+
+.footer-socials-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 45px;
+}
+
+.footer-socials-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .main-subscribe {
+  background-color: #756257;
   background-image: url("../images/background/Subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
-  background-color: #756257;
 }
 
-.subscribe {
-  color: #FFFFFF;
+.subscribe-container {
+  max-width: 684px;
+  margin: 0 auto;
+  padding: 96px 0 115px;
 }
+
 
 .subscribe-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
+
+.subscribe-post {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
 
 .subscribe-form-e-mail {
   font-weight: 400;
@@ -193,11 +408,16 @@ body {
   color: #000000;
 }
 
+
+
+/* Каталог */
+/* Фильтры */
+
 .hotel-header {
+  background-color: #756257;
   background-image: url("../images/background/filter-catalog.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
-  background-color: #756257;
 }
 
 
@@ -205,12 +425,21 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+}
+
+.breadcrumbs {
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+}
+
+.hotel-search {
+  display: flex;
 }
 
 .hotel-filter-title {
@@ -253,7 +482,7 @@ body {
   background: #82b3d3;
 }
 
-.button-hotel-off {
+.button-catalog.button-hotel-off {
   background: transparent;
 }
 
