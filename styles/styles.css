@@ -89,10 +89,12 @@ body {
 
 .navigation-user {
   margin: 0;
+  margin-right: 70px;
   padding: 0;
   list-style-type: none;
   display: flex;
-  max-width: 312px;
+  justify-content: flex-end;
+  width: 312px;
 }
 
 .navigation-link {
@@ -104,6 +106,21 @@ body {
   text-align: center;
   padding: 20px 16px;
   display: block;
+  max-width: 160px;
+}
+
+.link-user {
+  padding: 8px 12px;
+}
+
+.navigation-item-user {
+
+  min-width: 44px;
+}
+
+.button-item-user {
+  padding-top: 14px;
+  margin-left: 20px;
 }
 
 .button-navigation-link {
@@ -113,6 +130,8 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 8px 32px;
+  display: block;
 }
 
 
@@ -129,12 +148,12 @@ body {
   background-position: bottom left, 0 0;
   min-height: 485px;
   box-sizing: border-box;
+  padding: 51px 0 82px;
 }
 
 .logo-welcome {
   display: block;
   margin: 0 auto;
-  padding: 51px 0 82px;
 }
 
 
@@ -347,8 +366,8 @@ body {
 .footer-socials-contacts {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin-top: 45px;
+  padding-top: 49px;
+  padding-bottom: 31px;
 }
 
 .footer-socials-list {
@@ -417,9 +436,17 @@ body {
   background-color: #756257;
   background-image: url("../images/background/filter-catalog.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
+  padding-left: 70px;
 }
 
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 35px;
+}
 
 .title-inner {
   font-weight: 700;
@@ -438,14 +465,22 @@ body {
   line-height: 21px;
 }
 
-.hotel-search {
+.hotel-filter {
   display: flex;
+}
+
+.hotel-filter-group {
+  width: 151px;
 }
 
 .hotel-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.hotel-filter-list {
+  list-style-type: none;
 }
 
 .control-input {
@@ -470,6 +505,12 @@ body {
 
 .range-input {
   font-family: "PT Sans", sans-serif;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .button-catalog {
@@ -542,7 +583,24 @@ body {
   color: #333333;
 }
 
+
+/* Пагинация */
+
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 80px 70px 60px;
+
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  width: 60px;
   background: #82b3d3;
   color: #ffffff;
   font-weight: 700;
@@ -550,6 +608,10 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  padding: 11px 15px;
+
 }
 
 .pagination-current {
