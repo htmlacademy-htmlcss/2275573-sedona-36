@@ -114,7 +114,8 @@ body {
 }
 
 .button-item-user {
-  padding-top: 14px;
+  min-width: 44px;
+  margin-top: 14px;
   margin-left: 20px;
 }
 
@@ -447,7 +448,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
-  padding-left: 70px;
 }
 
 .header-container {
@@ -490,7 +490,7 @@ body {
 
 .hotel-filter-group:nth-child(2) {
   margin-right: 140px;
-  width: 151px;
+
 }
 
 .hotel-filter-title {
@@ -550,12 +550,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
-
-.button-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
 }
 
 .button-catalog {
@@ -684,22 +678,6 @@ body {
   display: inline;
   margin: 0;
   align-self: end;
-}
-
-
-/* Пагинация */
-
-
-.pagination {
-  display: flex;
-  margin: 0;
-  padding: 80px 70px 60px;
-
-  list-style-type: none;
-}
-
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 
