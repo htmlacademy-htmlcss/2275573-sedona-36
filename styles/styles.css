@@ -606,6 +606,12 @@ body {
 
 .hotel-list {
   list-style-type: none;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
 }
 
 .hotel-card {
