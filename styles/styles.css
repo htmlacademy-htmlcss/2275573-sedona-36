@@ -89,10 +89,12 @@ body {
 
 .navigation-user {
   margin: 0;
+  margin-right: 70px;
   padding: 0;
   list-style-type: none;
   display: flex;
-  max-width: 312px;
+  justify-content: flex-end;
+  width: 312px;
 }
 
 .navigation-link {
@@ -104,6 +106,17 @@ body {
   text-align: center;
   padding: 20px 16px;
   display: block;
+  max-width: 160px;
+}
+
+.link-user {
+  padding: 8px 12px;
+}
+
+.button-item-user {
+  min-width: 44px;
+  margin-top: 14px;
+  margin-left: 20px;
 }
 
 .button-navigation-link {
@@ -113,6 +126,8 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 8px 32px;
+  display: block;
 }
 
 
@@ -129,12 +144,12 @@ body {
   background-position: bottom left, 0 0;
   min-height: 485px;
   box-sizing: border-box;
+  padding: 51px 0 82px;
 }
 
 .logo-welcome {
   display: block;
   margin: 0 auto;
-  padding: 51px 0 82px;
 }
 
 
@@ -301,13 +316,18 @@ body {
 
 .search-description {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 }
 
 .search-hotel {
   width: 592px;
   margin: 0 auto;
-  padding: 96px 0 116px;
+  padding: 96px 0;
+}
+
+.search-wraper {
+  width: 592px;
+  margin: 0 auto;
 }
 
 .subscribe-form {
@@ -337,7 +357,8 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
-  display: block;
+  display: inline-block;
+  padding: 9px 50px;
 }
 
 
@@ -347,8 +368,8 @@ body {
 .footer-socials-contacts {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin-top: 45px;
+  padding-top: 49px;
+  padding-bottom: 31px;
 }
 
 .footer-socials-list {
@@ -369,7 +390,7 @@ body {
 .subscribe-container {
   max-width: 684px;
   margin: 0 auto;
-  padding: 96px 0 115px;
+  padding: 96px 0 104px;
 }
 
 
@@ -392,11 +413,18 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: #00000099
+  color: #00000099;
+  width: 100%;
+  padding-left: 18px;
+  border: none;
+  border-radius: 4px 0 0 4px;
 }
 
 .button-mail {
   background: #82b3d3;
+  border: none;
+  min-width: 232px;
+  padding: 8px;
 }
 
 .contacts-phone {
@@ -413,13 +441,24 @@ body {
 /* Каталог */
 /* Фильтры */
 
+
 .hotel-header {
   background-color: #756257;
   background-image: url("../images/background/filter-catalog.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
 }
 
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1060px;
+  padding: 35px 0 70px;
+  margin: 0 auto;
+
+}
 
 .title-inner {
   font-weight: 700;
@@ -438,56 +477,115 @@ body {
   line-height: 21px;
 }
 
-.hotel-search {
+.hotel-filter {
   display: flex;
+}
+
+.hotel-filter-group {
+  padding: 0;
+  width: 151px;
+  border: none;
+  margin-right: 70px;
+}
+
+.hotel-filter-group:nth-child(2) {
+  margin-right: 140px;
+
 }
 
 .hotel-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-align: left;
+  margin-bottom: 32px;
 }
 
-.control-input {
+
+.hotel-filter-list {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.control {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
 }
 
-.range-input {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
+.filter-price {}
+
+.range {
+  display: flex;
+}
+
+.range-wraper {
+  position: relative;
 }
 
 .filter-label {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: #0000004d
+  color: #0000004d;
+  position: absolute;
+  right: 12px;
+  top: 12px;
 }
 
 .range-input {
   font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  width: 143px;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .button-catalog {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #82b3d3;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 50px;
 }
 
 .button-hotel {
   background: #82b3d3;
+  margin-bottom: 32px;
 }
 
 .button-catalog.button-hotel-off {
   background: transparent;
 }
 
-.button-favorites {
-  background: #82b3d3;
+
+/* Результат поиска */
+
+
+.block-selection {
+  width: 1060px;
+  padding: 50px 0 40px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .selection-result {
@@ -496,6 +594,24 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.cards-show-list {
+  list-style-type: none;
+}
+
+
+/* Карточки */
+
+
+.hotel-list {
+  list-style-type: none;
+}
+
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .hotel-card-title {
@@ -513,24 +629,43 @@ body {
   color: #333333;
 }
 
-.hotel-card-link {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
-  background: #756157;
+.hotel-card-container {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
+  justify-content: center;
 }
 
-.button-catalog {
+.button-card {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #ffffff;
-  background: #82b3d3;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 18px;
+  box-sizing: border-box;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+  background: #756157;
+  display: inline;
+}
+
+.button-favorites {
+  background-color: #82b3d3;
+}
+
+.button-like {
+  background-color: #7db54f;
+}
+
+.stars {
+  display: inline;
+  margin: 0;
 }
 
 .rating {
@@ -540,9 +675,29 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+  display: inline;
+  margin: 0;
+  align-self: end;
+}
+
+
+/* Пагинация */
+
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 80px 70px 60px;
+
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
+  width: 60px;
   background: #82b3d3;
   color: #ffffff;
   font-weight: 700;
@@ -550,6 +705,10 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  padding: 11px 15px;
+
 }
 
 .pagination-current {
