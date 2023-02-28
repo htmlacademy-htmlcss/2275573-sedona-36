@@ -102,7 +102,6 @@ body {
   left: 15px;
 }
 
-
 .navigation-user {
   margin: 0;
   margin-right: 70px;
@@ -131,7 +130,6 @@ body {
 
 .like-link {
   position: relative;
-  background-image: url("../images/favourite.svg");
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -433,11 +431,11 @@ body {
 
 .button {
   color: #ffffff;
+  border-radius: 4px;
 }
 
-
-.button-search,
 .button-mail {
+  border-radius: 0 4px 4px 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -445,6 +443,9 @@ body {
 }
 
 .button-search {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
@@ -510,7 +511,7 @@ body {
   justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
-  padding: 45px 0 31px;
+  padding: 44px 0 31px;
 }
 
 
@@ -519,7 +520,11 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  width: 144px;
+  width: 192px;
+}
+
+.footer-socials-item {
+  padding: 6px 13px;
 }
 
 .contacts-phone {
@@ -610,13 +615,11 @@ body {
   line-height: 23px;
 }
 
-.filter-price {}
-
 .range {
   display: flex;
 }
 
-.range-wraper {
+.range-wrapper {
   position: relative;
 }
 
@@ -805,7 +808,6 @@ body {
   display: flex;
   margin: 0;
   padding: 80px 70px 60px;
-
   list-style-type: none;
 }
 
@@ -825,7 +827,7 @@ body {
   display: block;
   box-sizing: border-box;
   padding: 11px 15px;
-
+  border-radius: 4px;
 }
 
 .pagination-current {
@@ -846,6 +848,10 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.subscribe-form-e-mail {
+  background-color: #f2f2f2;
 }
 
 .subscribe-post-inner {
