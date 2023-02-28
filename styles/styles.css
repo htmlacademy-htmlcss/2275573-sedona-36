@@ -131,7 +131,6 @@ body {
 
 .like-link {
   position: relative;
-  background-image: url("../images/favourite.svg");
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
