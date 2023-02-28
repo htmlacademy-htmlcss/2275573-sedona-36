@@ -87,6 +87,22 @@ body {
   flex-wrap: wrap;
 }
 
+.navigation-item {
+  position: relative;
+
+}
+
+.item-current::before {
+  content: "";
+  height: 1px;
+  width: 68px;
+  border-bottom: 2px solid #756257;
+  position: absolute;
+  bottom: -1px;
+  left: 15px;
+}
+
+
 .navigation-user {
   margin: 0;
   margin-right: 70px;
@@ -110,7 +126,34 @@ body {
 }
 
 .link-user {
-  padding: 8px 12px;
+  padding: 23px 12px 16px;
+}
+
+.like-link {
+  position: relative;
+  background-image: url("../images/favourite.svg");
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.likes-number {
+  position: absolute;
+  top: 12px;
+  right: 6px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background: #7DB54F;
+  border-radius: 50%;
+  padding: 4px;
+  min-width: 10px;
+  height: 17px;
+  box-sizing: border-box;
 }
 
 .button-item-user {
@@ -193,6 +236,22 @@ body {
   color: #000000;
   margin: 0;
   margin-bottom: 61px;
+  position: relative;
+}
+
+.advantages-title::before {
+  position: absolute;
+  bottom: -30px;
+  left: 85px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+}
+
+.title-white::before {
+  background-color: #ffffff;
+
 }
 
 .advantages-description {
@@ -281,6 +340,38 @@ body {
   min-height: 385px;
   text-align: center;
   padding: 82px 85px;
+  position: relative;
+}
+
+.service-item::before {
+  content: "";
+  width: 75px;
+  height: 72px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.item-home::before {
+  background: url("../images/service/advantage-home.svg") no-repeat 0 0;
+  top: 80px;
+  width: 75px;
+  height: 72px;
+}
+
+.item-food::before {
+  background: url("../images/service/advantage-food.svg") no-repeat 0 0;
+  top: 80px;
+  width: 75px;
+  height: 72px;
+}
+
+.item-present::before {
+  width: 73px;
+  height: 76px;
+  top: 78px;
+  background: url("../images/service/advantage-present.svg") no-repeat 0 0;
 }
 
 .service-title {
@@ -363,21 +454,8 @@ body {
 
 
 /* Футер */
+/* Подписка */
 
-
-.footer-socials-contacts {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 49px;
-  padding-bottom: 31px;
-}
-
-.footer-socials-list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
 
 .main-subscribe {
   background-color: #756257;
@@ -393,7 +471,6 @@ body {
   padding: 96px 0 104px;
 }
 
-
 .subscribe-title {
   font-weight: 700;
   font-size: 30px;
@@ -405,9 +482,8 @@ body {
 
 .subscribe-post {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
-
 
 .subscribe-form-e-mail {
   font-weight: 400;
@@ -415,7 +491,7 @@ body {
   line-height: 24px;
   color: #00000099;
   width: 100%;
-  padding-left: 18px;
+  padding-left: 20px;
   border: none;
   border-radius: 4px 0 0 4px;
 }
@@ -424,7 +500,26 @@ body {
   background: #82b3d3;
   border: none;
   min-width: 232px;
-  padding: 8px;
+  padding: 8px 50px;
+}
+
+
+/* Соцсети и тел */
+.footer-socials-contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 45px 0 31px;
+}
+
+
+.footer-socials-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 144px;
 }
 
 .contacts-phone {
@@ -672,6 +767,21 @@ body {
 .stars {
   display: inline;
   margin: 0;
+  height: 17px;
+  background: url("../images/star.svg") space 0 0;
+  margin-top: 8px;
+}
+
+.hotel-stars-2 {
+  width: 42px;
+}
+
+.hotel-stars-3 {
+  width: 66px;
+}
+
+.hotel-stars-4 {
+  width: 85px;
 }
 
 .rating {
@@ -684,6 +794,7 @@ body {
   display: inline;
   margin: 0;
   align-self: end;
+  background-color: #f2f2f2;
 }
 
 
