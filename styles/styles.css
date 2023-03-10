@@ -800,7 +800,7 @@ body {
   opacity: 0.7;
 }
 
-.control input:checked:focus + .control-mark {
+.control input:focus + .control-mark {
   outline: 3px solid rgb(131, 179, 211);
 }
 
@@ -808,7 +808,7 @@ body {
   opacity: 0.4;
 }
 
-.control-checkbox:checked + .control-mark::before {
+.control-checkbox + .control-mark::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -1115,7 +1115,7 @@ body {
 .cards-show-item:hover,
 .cards-show-item:focus,
 .cards-show-item:active {
-  border: 2px solid #000000;
+  border: 3px solid #000000;
 }
 
 /* Карточки */
@@ -1431,6 +1431,7 @@ body {
 .modal input:focus {
   background: #e6e6e6;
 }
+
 
 .modal input:disabled {
   background: #e5e5e5;
