@@ -1139,8 +1139,13 @@ body {
   border-radius: 4px;
 }
 
+.hotel-card-image {
+  display: block;
+}
+
 .hotel-link {
   margin-bottom: 12px;
+  display: block;
 }
 
 .hotel-link:focus {
