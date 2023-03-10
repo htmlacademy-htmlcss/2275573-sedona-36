@@ -92,10 +92,8 @@ body {
 }
 
 .navigation-item:hover,
-.navigation-item:focus,
-.link-search:hover,
-.link-search:focus {
-  color: #756157
+.navigation-item:focus {
+  color: #756157;
 }
 
 .navigation-item:active {
@@ -138,15 +136,13 @@ body {
 .link-user {
   min-width: 20px;
   min-height: 22px;
-  padding: 27px 12px 16px;
+  padding: 23px 12px 16px;
 }
 
 .link-search {
   position: relative;
   width: 20px;
   height: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 
@@ -154,9 +150,6 @@ body {
   position: relative;
   width: 18px;
   height: 17px;
-  background-image: url("../images/icons/heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .likes-number {
@@ -169,7 +162,7 @@ body {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background: #7DB54F;
+  background: #7db54f;
   border-radius: 50%;
   padding: 5px;
   min-width: 20px;
@@ -177,7 +170,9 @@ body {
   box-sizing: border-box;
 }
 
+
 .button {
+  font-family: "PT Sans", sans-serif;
   color: #ffffff;
   border-radius: 4px;
 }
@@ -213,10 +208,6 @@ body {
 /*  Hero */
 
 
-.main-page {
-  flex-grow: 1;
-}
-
 .welcome {
   background-color: #b29584;
   background-image:
@@ -242,7 +233,7 @@ body {
 .advantages-container {
   max-width: 885px;
   margin: 0 auto;
-  padding: 68px 0 100px;
+  padding: 68px 0 80px;
 }
 
 .city-advantages {
@@ -252,11 +243,12 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-bottom: 15px
+  margin-bottom: 26px;
 }
 
 .about-advantages {
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .advantages-list {
@@ -291,12 +283,9 @@ body {
 
 .title-white::before {
   background: rgba(255, 255, 255, 0.3);
-
-
 }
 
 .advantages-description {
-  width: 230px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -308,7 +297,7 @@ body {
   box-sizing: border-box;
   min-height: 385px;
   text-align: center;
-  padding: 114px 85px 0;
+  padding: 114px 83px;
 }
 
 .block-blue {
@@ -325,9 +314,7 @@ body {
   min-height: 385px;
   text-align: center;
   color: #ffffff;
-  padding-top: 103px;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding: 103px 85px;
 }
 
 .title-white {
@@ -448,7 +435,7 @@ body {
 
 .search-description {
   margin: 0;
-  margin-bottom: 53px;
+  margin-bottom: 52px;
 }
 
 .search-hotel {
@@ -461,7 +448,6 @@ body {
   width: 592px;
   margin: 0 auto;
 }
-
 
 
 /* Футер */
@@ -502,22 +488,19 @@ body {
 }
 
 .subscribe-form-e-mail {
+  font-family: "PT Sans", sans-serif;
   background-color: #f2f2f2;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: #00000099;
   width: 100%;
-  padding: 14px 20px;
-  border: none;
+  padding: 12px 17px;
+  border: 2px solid transparent;
   outline: none;
   border-radius: 4px 0 0 4px;
 }
 
-.subscribe-form-e-mail,
-.button {
-  font-family: "PT Sans", sans-serif;
-}
 
 .subscribe-form-e-mail:hover,
 .subscribe-form-e-mail:focus {
@@ -525,8 +508,13 @@ body {
 }
 
 .subscribe-form-e-mail:not(:placeholder-shown) {
-  border: 2px solid black;
+  border: 2px solid #000000;
   color: #000000;
+}
+
+.subscribe-form-e-mail:disabled {
+  background: #e5e5e5;
+  color: #ffffff;
 }
 
 .button-mail {
@@ -543,11 +531,16 @@ body {
 
 .button-mail:hover,
 .button-mail:focus {
-  background: #68A2CA;
+  background: #68a2ca;
 }
 
 .button-mail:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button-mail:disabled {
+  background: #e5e5e5;
+  color: #ffffff;
 }
 
 .button-search {
@@ -562,10 +555,13 @@ body {
 }
 
 
-
 /* Соцсети и тел */
+
+
 .footer-socials-contacts {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
   padding: 43px 0 31px;
@@ -574,11 +570,11 @@ body {
 
 .footer-socials-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
   width: 192px;
-  margin-right: 187px;
 }
 
 .footer-socials-item {
@@ -597,7 +593,6 @@ body {
 .icon-link:focus {
   color: #68a2ca;
   outline: none;
-
 }
 
 .icon-link:active {
@@ -614,13 +609,13 @@ body {
 }
 
 .contacts-phone {
+  max-width: 342px;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-  margin-right: 235px;
 }
 
 .logo-html-academy {
@@ -637,7 +632,6 @@ body {
 .htmlacademy-link:focus {
   color: #756157;
   outline: none;
-
 }
 
 .contacts-phone:active,
@@ -659,10 +653,11 @@ body {
 
 .header-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
   width: 1060px;
-  padding: 34px 0 70px;
+  padding: 35px 0 70px;
   margin: 0 auto;
 }
 
@@ -685,11 +680,10 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .breadcrumbs-item {
-  margin-right: 28px;
+  margin-right: 27px;
   position: relative;
 }
 
@@ -706,6 +700,11 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.breadcrumbs-link:focus-visible {
+  outline: 2px solid #83b3d3;
+  border-radius: 4px;
+}
+
 .breadcrumbs-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -715,7 +714,7 @@ body {
   background-repeat: no-repeat;
   background-size: 13px 15px;
   background-position: center;
-  padding: 8px 7px;
+  padding: 2px 6px;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
@@ -728,8 +727,8 @@ body {
   margin-left: 9px;
 }
 
-/* Фильтр */
 
+/* Фильтр */
 
 
 .hotel-filter {
@@ -746,7 +745,6 @@ body {
 
 .hotel-filter-group:nth-child(2) {
   margin-right: 140px;
-
 }
 
 .hotel-filter-title {
@@ -769,6 +767,10 @@ body {
 .hotel-filter-item:not(:last-child) {
   margin-bottom: 16px;
 }
+
+
+/* Чекбокс и радиокнопки */
+
 
 .control {
   font-weight: 400;
@@ -798,8 +800,8 @@ body {
   opacity: 0.7;
 }
 
-.control input:focus + .control-mark {
-  outline: 3px solid #83B3D3;
+.control input:checked:focus + .control-mark {
+  outline: 3px solid rgb(131, 179, 211);
 }
 
 .control:active {
@@ -837,8 +839,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #3F5E72;
-
+  background-color: #3f5e72;
 }
 
 
@@ -875,27 +876,27 @@ body {
   border: none;
   outline: none;
   background-color: #f2f2f2;
+  appearance: textfield;
 }
 
 .range-input:hover {
   background: #e6e6e6;
 }
 
-.range-input:focus:not(:active) {
-  background: #e6e6e6;
-  border: 3px solid #83B3D3;
+.range-input:focus {
+  background: #f2f2f2;
+  outline: 2px solid #000000;
 }
 
 .range-input:active {
   background: #f2f2f2;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
-
 
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -951,6 +952,20 @@ body {
   left: 206px;
 }
 
+.range-handle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-handle:focus {
+  outline: 3px solid #83b3d3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-handle:active {
+  outline: 2px solid #83b3d3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
 /* Кнопки */
 
 
@@ -978,10 +993,45 @@ body {
   margin-bottom: 32px;
 }
 
-.button-catalog.button-hotel-off {
+.button-hotel:hover,
+.button-hotel:focus,
+.button-favorites:hover,
+.button-favorites:focus,
+.pagination-link:hover,
+.pagination-link:focus {
+  background: #68a2ca;
+  outline: none;
+}
+
+.button-hotel:active,
+.button-favorites:active,
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #82b3d3;
+}
+
+.button-catalog:disabled,
+.button-hotel:disabled,
+.button-card:disabled {
+  background: #e5e5e5;
+  color: #ffffff;
+}
+
+.button-hotel-off {
   background: transparent;
 }
 
+.button-hotel-off:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-hotel-off:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
+.button-hotel-off:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 /* Результат поиска */
 
@@ -997,17 +1047,18 @@ body {
 }
 
 .selection-result {
+  max-width: 360px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-right: 129px;
+  margin-right: 125px;
 }
 
 .select-control {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1030,7 +1081,6 @@ body {
 
 .select-control:focus {
   border-color: #3f5e72;
-
 }
 
 
@@ -1040,6 +1090,7 @@ body {
   padding: 0;
   width: 160px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
 }
@@ -1047,12 +1098,24 @@ body {
 .cards-show-item {
   width: 48px;
   height: 48px;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.cards-show-item-current {
+  border: 2px solid #000000;
 }
 
 .cards-show-link {
   display: block;
-  box-sizing: border-box;
-  padding: 11px;
+  padding: 8px;
+}
+
+.cards-show-item:hover,
+.cards-show-item:focus,
+.cards-show-item:active {
+  border: 2px solid #000000;
 }
 
 /* Карточки */
@@ -1065,7 +1128,7 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  gap: 18px 20px;
+  gap: 20px;
 }
 
 .hotel-card {
@@ -1080,13 +1143,17 @@ body {
   margin-bottom: 12px;
 }
 
+.hotel-link:focus {
+  outline: 3px solid #82b3d3;
+}
+
 .hotel-card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   text-align: left;
 }
 
@@ -1112,7 +1179,7 @@ body {
 .hotel-card-container {
   display: grid;
   grid-template-columns: 140px 140px;
-  gap: 16px 20px;
+  gap: 16px 21px;
   justify-content: center;
 }
 
@@ -1129,11 +1196,24 @@ body {
   box-sizing: border-box;
 }
 
+
 .hotel-card-link {
   text-decoration: none;
   background: #756157;
   display: inline;
 }
+
+.hotel-card-link:hover,
+.hotel-card-link:focus {
+  background: #615048;
+  outline: none;
+}
+
+.hotel-card-link:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 .button-favorites {
   background-color: #82b3d3;
@@ -1143,12 +1223,22 @@ body {
   background-color: #7db54f;
 }
 
+.button-like:hover,
+.button-like:focus {
+  background: #6c9e42;
+  outline: none;
+}
+
+.button-like:active {
+  background: #7db54f;
+}
+
 .stars {
   display: inline;
   margin: 0;
   height: 17px;
   background: url("../images/star.svg") space 0 0;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .hotel-stars-2 {
@@ -1192,26 +1282,31 @@ body {
 }
 
 .pagination-item {
-  width: 60px;
+  min-width: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-
 .pagination-link {
   background: #82b3d3;
   text-decoration: none;
   display: block;
   box-sizing: border-box;
-  padding: 11px 15px;
+  padding: 11px 2px;
   border-radius: 4px;
   color: #ffffff;
 }
 
-
 .pagination-current {
+  color: #000000;
+  background: #f2f2f2;
+}
+
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
   color: #000000;
   background: #f2f2f2;
 }
@@ -1223,6 +1318,7 @@ body {
   color: #000000;
   display: block;
   padding-top: 18px;
+  min-width: 60px;
 }
 
 .subscribe-title-inner {
@@ -1243,7 +1339,7 @@ body {
 
 .modal-container {
   background-color: rgba(242, 242, 242, 0.8);
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -1251,31 +1347,32 @@ body {
   top: 0;
 }
 
-.modal-container-close {
-  display: none;
+.modal-container-open {
+  display: flex;
 }
 
 .modal {
+  display: block;
   width: 577px;
+  max-height: 576px;
   background-color: #ffffff;
   position: relative;
   margin: auto;
   padding: 64px 70px;
   border-radius: 33px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+  overflow: auto;
 }
 
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 64px;
+  top: 65px;
   right: 52px;
   width: 52px;
   height: 52px;
   background-color: #f2f2f2;
   border: none;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1287,7 +1384,12 @@ body {
 
 .modal-close-button:active {
   background-color: #e6e6e6;
-  color: rgba(0, 0, 0, 0.5)
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-close-button:disabled {
+  background: #e5e5e5;
+  color: #ffffff;
 }
 
 .modal-title {
@@ -1316,13 +1418,18 @@ body {
   line-height: 24px;
   font-weight: 700;
   font-family: inherit;
-  border: none;
+  border: 3px solid transparent;
   border-radius: 4px;
 }
 
 .modal input:hover,
 .modal input:focus {
   background: #e6e6e6;
+}
+
+.modal input:disabled {
+  background: #e5e5e5;
+  color: #ffffff;
 }
 
 .modal-date-label {
@@ -1337,12 +1444,12 @@ body {
   width: 440px;
   background-color: #f2f2f2;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
+
 .modal-label-text {
-  padding: 12px 0;
-  text-align: start;
-  vertical-align: middle;
+  padding-top: 12px;
   text-transform: capitalize;
 }
 
@@ -1350,10 +1457,26 @@ body {
   content: "";
   position: absolute;
   top: 14px;
-  right: 14px;
+  right: 20px;
   width: 20px;
   height: 20px;
   background-image: url("../images/icons/modal/calendar.svg");
+}
+
+.date-text {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 4px;
+  color: #333333;
+  position: absolute;
+}
+
+.error {
+  color: #ff5757;
 }
 
 
@@ -1376,7 +1499,6 @@ body {
   opacity: 0.7;
 }
 
-
 .modal-guests-container:last-of-type {
   grid-column: 4 / -1;
   position: relative;
@@ -1386,6 +1508,10 @@ body {
 .modal-adults-label-text {
   padding: 12px 0;
 }
+
+
+/* Тултип */
+
 
 .tooltip-toggle {
   position: absolute;
@@ -1401,6 +1527,7 @@ body {
   background-color: #83b3d3;
   border: none;
   border-radius: 50%;
+  outline: none;
 }
 
 .tooltip-text {
@@ -1440,6 +1567,7 @@ body {
 
 
 .modal-guests-count {
+  background-color: #f2f2f2;
   display: flex;
   width: 110px;
   height: 48px;
@@ -1448,38 +1576,42 @@ body {
   border-radius: 4px;
 }
 
+.math-mark svg {
+  position: absolute;
+}
+
 .math-mark {
-  background-color: #F2F2F2;
+  width: 40px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
   font-size: 40px;
-  color: #756157;
+  color: rgba(117, 97, 87, 0.3);
   border: none;
+  border-radius: 0 4px 4px 0;
 }
 
-.math-mark path {
-  transition: all 0.3s;
+.math-mark:hover,
+.math-mark:focus {
+  color: #000000;
+}
+
+.math-mark:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.math-mark:disabled {
+  background: #e5e5e5;
+  color: #ffffff;
 }
 
 .modal-min {
   border-radius: 4px 0 0 4px;
 }
 
-.modal-min:hover .minus-svg path {
-  fill: #000000;
-  fill-opacity: 1;
-}
-
 .modal-max {
   border-radius: 0 4px 4px 0;
-}
-
-.modal-max:hover .plus-svg path {
-  fill: #000000;
-  fill-opacity: 1;
 }
 
 .modal-max::after {
@@ -1488,20 +1620,16 @@ body {
   left: 19px;
 }
 
-.modal-count-field {
+.guests-count-field {
+  background-color: #f2f2f2;
   width: 31px;
   text-align: center;
-  background-color: #f2f2f2;
-  border-radius: 0;
-}
-
-.guests-count-field {
-  text-align: center;
+  appearance: textfield;
 }
 
 .guests-count-field::-webkit-inner-spin-button,
 .guests-count-field::-webkit-outer-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -1512,7 +1640,7 @@ body {
   padding: 18px 0;
   border: none;
   border-radius: 10px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1523,6 +1651,7 @@ body {
 .button-find:hover,
 .button-find:focus {
   background: #68a2ca;
+  outline: none;
 }
 
 .button-find:active {
