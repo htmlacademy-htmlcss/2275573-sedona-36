@@ -784,16 +784,6 @@ body {
   padding-left: 36px;
 }
 
-.control-mark {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  background-color: #ffffff;
-}
 
 .control:hover {
   opacity: 0.7;
@@ -1417,26 +1407,6 @@ body {
   color: #000000;
 }
 
-.modal input {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  font-family: inherit;
-  border: 3px solid transparent;
-  border-radius: 4px;
-}
-
-.modal input:hover,
-.modal input:focus {
-  background: #e6e6e6;
-}
-
-
-.modal input:disabled {
-  background: #e5e5e5;
-  color: #ffffff;
-}
-
 .modal-date-label {
   grid-column: 1 / -1;
   position: relative;
@@ -1450,6 +1420,29 @@ body {
   background-color: #f2f2f2;
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.modal input {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: inherit;
+  border: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.modal input:hover {
+  background: #e6e6e6;
+}
+
+.modal input:focus-visible {
+  border: 3px solid #82b3d3;
+  outline: none;
+}
+
+.modal input:disabled {
+  background: #e5e5e5;
+  color: #ffffff;
 }
 
 
