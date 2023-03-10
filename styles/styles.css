@@ -785,7 +785,6 @@ body {
 }
 
 .control-mark {
-  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -808,7 +807,7 @@ body {
   opacity: 0.4;
 }
 
-.control-checkbox + .control-mark::before {
+.control-checkbox:checked + .control-mark::before {
   content: "";
   position: absolute;
   top: 5px;
