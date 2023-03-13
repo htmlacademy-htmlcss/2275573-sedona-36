@@ -145,7 +145,6 @@ body {
   height: 20px;
 }
 
-
 .like-link {
   position: relative;
   width: 18px;
@@ -169,7 +168,6 @@ body {
   height: 20px;
   box-sizing: border-box;
 }
-
 
 .button {
   font-family: "PT Sans", sans-serif;
@@ -349,7 +347,7 @@ body {
   margin-bottom: 20px;
 }
 
-.servive-text {
+.service-text {
   margin: 0;
 }
 
@@ -413,7 +411,6 @@ body {
   margin-bottom: 29px;
 }
 
-
 .service-description {
   font-weight: 400;
   font-size: 18px;
@@ -456,7 +453,7 @@ body {
 
 .main-subscribe {
   background-color: #756257;
-  background-image: url("../images/background/Subscribe.jpg");
+  background-image: url("../images/background/subs.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -487,7 +484,7 @@ body {
   justify-content: center;
 }
 
-.subscribe-form-e-mail {
+.subscribe-form-email {
   font-family: "PT Sans", sans-serif;
   background-color: #f2f2f2;
   font-weight: 400;
@@ -501,18 +498,17 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
-
-.subscribe-form-e-mail:hover,
-.subscribe-form-e-mail:focus {
+.subscribe-form-email:hover,
+.subscribe-form-email:focus {
   border: 2px solid #68a2ca;
 }
 
-.subscribe-form-e-mail:not(:placeholder-shown) {
+.subscribe-form-email:not(:placeholder-shown) {
   border: 2px solid #000000;
   color: #000000;
 }
 
-.subscribe-form-e-mail:disabled {
+.subscribe-form-email:disabled {
   background: #e5e5e5;
   color: #ffffff;
 }
@@ -567,7 +563,6 @@ body {
   padding: 43px 0 31px;
 }
 
-
 .footer-socials-list {
   display: flex;
   flex-wrap: wrap;
@@ -618,7 +613,7 @@ body {
   color: #000000;
 }
 
-.logo-html-academy {
+.logo-htmlacademy {
   padding-top: 3px;
 }
 
@@ -638,6 +633,7 @@ body {
 .htmlacademy-link:active {
   color: rgba(117, 97, 87, 0.3);
 }
+
 
 /* Каталог */
 /* Фильтры */
@@ -756,7 +752,6 @@ body {
   margin-bottom: 32px;
 }
 
-
 .hotel-filter-list {
   list-style-type: none;
   text-align: left;
@@ -782,17 +777,6 @@ body {
   margin: 0;
   padding: 0;
   padding-left: 36px;
-}
-
-.control-mark {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  background-color: #ffffff;
 }
 
 .control:hover {
@@ -844,6 +828,7 @@ body {
 
 /* Ренж */
 
+
 .range {
   display: flex;
   margin-bottom: 35px;
@@ -891,7 +876,6 @@ body {
   background: #f2f2f2;
   outline: 2px solid #000000;
 }
-
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
@@ -965,6 +949,7 @@ body {
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
+
 /* Кнопки */
 
 
@@ -1032,6 +1017,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+
 /* Результат поиска */
 
 
@@ -1082,7 +1068,6 @@ body {
   border-color: #3f5e72;
 }
 
-
 .cards-show-list {
   list-style-type: none;
   margin: 0;
@@ -1116,6 +1101,7 @@ body {
 .cards-show-item:active {
   border: 3px solid #000000;
 }
+
 
 /* Карточки */
 
@@ -1200,7 +1186,6 @@ body {
   box-sizing: border-box;
 }
 
-
 .hotel-card-link {
   text-decoration: none;
   background: #756157;
@@ -1217,7 +1202,6 @@ body {
   background: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 .button-favorites {
   background-color: #82b3d3;
@@ -1417,26 +1401,6 @@ body {
   color: #000000;
 }
 
-.modal input {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  font-family: inherit;
-  border: 3px solid transparent;
-  border-radius: 4px;
-}
-
-.modal input:hover,
-.modal input:focus {
-  background: #e6e6e6;
-}
-
-
-.modal input:disabled {
-  background: #e5e5e5;
-  color: #ffffff;
-}
-
 .modal-date-label {
   grid-column: 1 / -1;
   position: relative;
@@ -1452,6 +1416,28 @@ body {
   border-radius: 4px;
 }
 
+.modal input {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: inherit;
+  border: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.modal input:hover {
+  background: #e6e6e6;
+}
+
+.modal input:focus-visible {
+  border: 3px solid #82b3d3;
+  outline: none;
+}
+
+.modal input:disabled {
+  background: #e5e5e5;
+  color: #ffffff;
+}
 
 .modal-label-text {
   padding-top: 12px;
@@ -1483,7 +1469,6 @@ body {
 .error {
   color: #ff5757;
 }
-
 
 .modal-guests-container {
   grid-column: 2 span;
@@ -1569,7 +1554,6 @@ body {
   border-right: 10px solid transparent;
   border-bottom: 10px solid #333333;
 }
-
 
 .modal-guests-count {
   background-color: #f2f2f2;
@@ -1658,6 +1642,7 @@ body {
   background: #68a2ca;
   outline: none;
 }
+
 
 .button-find:active {
   color: rgba(255, 255, 255, 0.3);
