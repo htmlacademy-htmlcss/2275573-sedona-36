@@ -779,6 +779,18 @@ body {
   padding-left: 36px;
 }
 
+.control-mark {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
 .control:hover {
   opacity: 0.7;
 }
